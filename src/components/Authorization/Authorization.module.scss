@@ -1,0 +1,28 @@
+.navigation {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 30px 0;
+    color: black;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #9b132d;
+    text-shadow: 0px 0px 14px rgba(164, 19, 60, 1);
+  }
+  
+  .active {
+    /* composes: nav-link; */
+    color: #9b132d;
+  }

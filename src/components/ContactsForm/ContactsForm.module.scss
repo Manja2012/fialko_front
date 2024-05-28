@@ -1,0 +1,137 @@
+.form {
+    padding: 20px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      width: 70%;
+      padding: 30px 104px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      padding: 50px 168px;
+    }
+  
+    &__label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 24px;
+      line-height: 34px;
+      text-align: left;
+      letter-spacing: 0.01em;
+      color: var(--text-color);
+    }
+    &__input {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 12px;
+      border: 1px solid var(--input-coor);
+      border-radius: 4px;
+      color: var(--text-color);
+      cursor: pointer;
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        border: 1px solid var(--accent-color);
+        outline: 1px solid var(--accent-color);
+      }
+    }
+    &__text_star{
+      margin-top: 10px;
+      text-align: left;
+    }
+    &__comment {
+      display: block;
+      width: 100%;
+      height: 120px;
+      padding: 16px 12px;
+      resize: none;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        border: 1px solid var(--accent-color);
+        outline: 1px solid var(--accent-color);
+      }
+    }
+  
+    &__text {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      color: var(--text-color);
+      @media screen and (min-width: 1200px) {
+        width: 70%;
+        margin: 0 auto 40px;
+        font-size: 28px;
+        line-height: 40px;
+      }
+    }
+    &__image {
+      display: none;
+      @media screen and (min-width: 1200px) {
+        display: block;
+        width: 50%;
+      }
+    }
+    &__photo {
+      width: 90%;
+    }
+    &__button {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding: 10px 32px;
+      min-width: 100px;
+      font-family: inherit;
+      background-color: var(--accent-color);
+      font-size: 24px;
+      line-height: 37px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: var(--main-background-color);
+      cursor: pointer;
+      border-radius: 18px;
+      border: transparent;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      display: flex;
+      align-items: center;
+  
+      &:hover,
+      &:focus {
+        background-color: var(--accent-color-hover);
+      }
+  
+      &[disabled],
+      &:disabled {
+        opacity: 0.5 !important;
+      }
+    }
+  }
+  
+  .flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  /* Стиль для сообщений об ошибке */
+  .errorMessage {
+    background-color: #ff6b6b; /* Красный цвет */
+    color: white; /* Белый цвет текста */
+  }
+  
+  /* Стиль для сообщений об успешной отправке */
+  .successMessage {
+    background-color: #5cb85c; /* Зеленый цвет */
+    color: white; /* Белый цвет текста */
+  }
+  
