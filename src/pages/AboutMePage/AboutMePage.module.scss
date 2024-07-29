@@ -1,0 +1,81 @@
+.card {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    border-radius: 8px;
+    padding: 12px;
+    width: 350px;
+    height: 255px;
+    margin: 0 auto;
+    object-fit: cover;
+    @media screen and (min-width: 768px) {
+     width: 550px;
+      height: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 550px;
+      height: 450px;
+    }
+  }
+  &__image_div{
+    width: 50%;
+  }
+  &__text {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--text-color);
+
+    @media screen and (min-width: 768px) {
+      padding: 20px;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 12px;
+    font-size: 26px;
+    line-height: 28px;
+    color: var(--accent-color);
+  }
+    &__title2 {
+    margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--text-color);
+    text-align: left;
+  }
+
+  &__description{
+   margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--accent-color);
+   }
+
+  &__block {
+    width: 50%;
+  }
+    
+  &__link {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+  
+    color: var(--accent-color);
+  }
+
+}

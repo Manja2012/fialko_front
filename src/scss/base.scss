@@ -1,0 +1,151 @@
+:root {
+    --text-color: #212121;
+    --accent-color: #5AA311;
+    --accent-color-hover: #6DDF3E;
+    --text-contacts-color: #757575;
+    --main-background-color: #FFFFFF;
+    // --frame-background-color: #F5F4FA;
+    // --footer-background-color: #3C4043;
+    --text-footer-color: rgba(246, 239, 239, 0.918);
+    // --border-color: #ECECEC; 
+    // --border: #AFB1B8;
+    --input-coor:rgba(33, 33, 33, 0.2);
+}
+
+:root {
+    font-size: 1rem;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+  .container {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+  .section {
+    padding: 20px;
+    text-align: center;
+  }
+  .padding {
+    padding: 10px;
+  }
+  .tablet {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+  .flex {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .border{
+    border-bottom: 2px solid var(--accent-color);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    background-color: var(--main-background-color);
+    color: var(--text-color);
+  }
+  h1,
+  h2,
+  h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+  }
+  header {
+    border-bottom: 1px solid var(--border-color);
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+//   .spin {
+//     animation: spin 1s ease-in-out infinite;
+//   }
+  
+//   @keyframes spin {
+//     from {
+//       transform: rotate(0deg);
+//     }
+//     to {
+//       transform: rotate(360deg);
+//     }
+//   }
+.button {
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 18px;
+    min-width: 100px;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    font-size: 18px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-background-color);
+    cursor: pointer;
+    border-radius: 18px;
+    border: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color-hover);
+    }
+}

@@ -1,0 +1,117 @@
+.card {
+  @media screen and (min-width: 768px) {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    border-radius: 8px;
+    width: 350px;
+    height: 255px;
+    margin: 0 auto;
+    object-fit: cover;
+    @media screen and (min-width: 768px) {
+      width: 325px;
+      height: 255px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 350px;
+      height: 450px;
+    }
+  }
+   &__block {
+    width: 50%;
+  }
+  &__text {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 29px;
+    color: var(--text-color);
+
+    @media screen and (min-width: 768px) {
+      padding: 20px;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 12px;
+    font-size: 26px;
+    line-height: 28px;
+    color: var(--accent-color);
+  }
+   &__title2 {
+    margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--text-color);
+    text-align: left;
+  }
+
+  &__item {
+    margin: 10px;
+    padding: 20px 24px;
+    border: 1px solid var(--accent-color);
+
+  }
+  &__description {
+    margin-top: 12px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--accent-color);
+   }
+
+
+  &__link {
+    display: block;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+  
+    color: var(--accent-color);
+  }
+  &__review{
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: left4r;
+  
+  }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .courseCard {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  

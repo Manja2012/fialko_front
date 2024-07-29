@@ -1,7 +1,7 @@
 import { useState } from "react";
-import css from "./RegistrationForm.module.scss";
 import { register } from "../../api/api-client.js";
 import { useNavigate } from "react-router-dom";
+import style from '../ContactsForm/ContactsForm.module.scss'
 
 const RegistrationForm = () => {
   const [name, setName] = useState("");
@@ -26,43 +26,39 @@ const RegistrationForm = () => {
     };
 
     return (
-      <div className={css["registration-form-wrapper"]}>
-        <form
-          className={css["registration-form"]}
-          autoComplete="off"
-          onSubmit={handleSubmit}
-        >
-          <label className={css["registration-form-label"]}>
-            <span className={css["label-span"]}>Username</span>
+      <div className="container">
+        <form className={style.form} autoComplete="off" onSubmit={handleSubmit}>
+          <label className={style.form__label}>
+            Username
             <input
-              className={css["registration-form-input"]}
+              className={style.form__input}
               type="text"
               name="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-          <label className={css["registration-form-label"]}>
-            <span className={css["label-span"]}>Email</span>
+          <label className={style.form__label}>
+            Email
             <input
-              className={css["registration-form-input"]}
+              className={style.form__input}
               type="email"
               name="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </label>
-          <label className={css["registration-form-label"]}>
-            <span className={css["label-span"]}>Password</span>
+          <label className={style.form__label}>
+            Password
             <input
-              className={css["registration-form-input"]}
+              className={style.form__input}
               type="password"
               name="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
           </label>
-          <button className={css["registration-form-btn"]} type="submit">
+          <button className={style.form__button} type="submit">
             Register
           </button>
         </form>

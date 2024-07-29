@@ -1,7 +1,8 @@
+import AddCourseForm from "../../components/AddCourseForm/AddCourseForm";
 const AdminPage = () => {
   return (
     <main>
-      <h2>Admin</h2>
+      <AddCourseForm/>
     </main>
   );
 };

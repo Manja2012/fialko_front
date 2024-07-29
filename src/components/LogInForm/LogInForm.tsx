@@ -9,13 +9,13 @@ const LogInForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const { setUser } = useUser(); // Используйте setUser из контекста
+  const { login } = useUser(); // Используйте login из контекста
 
   const handleSubmit = async event => {
     event.preventDefault();
     try {
-      const user = await logIn(email, password);
-      setUser(user); // Установите пользователя в контексте
+      const user = await login(email, password); // Установите пользователя в контексте
+
       if (user.isAdmin) {
         navigate("/admin");
       } else {
