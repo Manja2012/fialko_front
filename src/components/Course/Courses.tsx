@@ -22,7 +22,7 @@ const Courses = () => {
   return (
     <section className="container section">
       <h2 className={style.card__title2}>nos cours</h2>
-      <ul>
+      <ul className={style.card__list}>
         {courses.map((card) => (
           <li className={style.card__item} key={card._id}>
             <CourseCard

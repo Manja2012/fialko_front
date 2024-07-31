@@ -12,6 +12,8 @@ import UserPage from './pages/UserPage/UserPage';
 import CoursesPage from './pages/CoursesPage/CoursesPage.js';
 import OneCoursePage from './pages/OneCoursePage/OneCoursePage.js';
 import AboutMePage from './pages/AboutMePage/AboutMePage.js'
+import Success from './stripe/success.js'
+import Canseled from './stripe/cansel.js'
 // import ReservationPage from './pages/ReservationPage/ReservationPage.js';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="/courses/:id" element={<OneCoursePage />} />
           <Route path="/log-in" element={<LoginPage />} />
           <Route path="/propos" element={<AboutMePage />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="/canseled" element={<Canseled />} />
           {/* <Route path="/reservation" element={<ReservationPage />} /> */}
         </Route>
       ) : (
