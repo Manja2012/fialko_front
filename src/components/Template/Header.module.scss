@@ -98,6 +98,34 @@
       }
   }
 
+  .basket_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 20px;
+    margin-right: 30px;
+
+    width: 60px;
+    height: 60px;
+   
+    border-radius: 50%;
+   
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--text-footer-color);
+    }
+  }
+
+  .basket_icon{
+    fill: var(--main-background-color);
+    background-color: var(--background-footer-color);
+  }
+
 //Mobil menu
 
 .menu_button {

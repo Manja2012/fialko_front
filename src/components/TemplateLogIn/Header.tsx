@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "../../images/logo.svg";
 import { GrClose } from "react-icons/gr";
 import { GrMenu } from "react-icons/gr";
+import { FaShoppingBasket } from "react-icons/fa";
 import LogoutButton from "../LogoutButton/LogoutButton";
 import style from "../Template/Header.module.scss";
 
@@ -93,7 +94,10 @@ const Header = () => {
           </nav>
         </div>
         <ul className={`${style.nav} ${style.nav__margin}`}>
-         <LogoutButton/>
+          <Link to="/panier"  className={style.basket_link}>
+            <FaShoppingBasket className={style.basket_icon} size={30} />
+          </Link>
+          <LogoutButton />
           <li className={style.nav__item_logIn}>
             <Link className={style.nav__link} to="/profile">
               {" "}

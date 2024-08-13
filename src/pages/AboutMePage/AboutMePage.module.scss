@@ -14,18 +14,18 @@
     object-fit: cover;
     @media screen and (min-width: 768px) {
         width: 350px;
-        height: 450px;
+        height: 350px;
     }
 
-    // @media screen and (min-width: 1200px) {
-    //   width: 350px;
-    //   height: 450px;
-    // }
+    @media screen and (min-width: 1200px) {
+      width: 350px;
+      height: 450px;
+    }
   }
   &__image_div{
  
       @media screen and (min-width: 768px) {
-       width: 40%;
+       width: 60%;
     }
   }
   &__text {
@@ -67,7 +67,7 @@
    }
 
   &__block {
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: 768px) {
       width: 60%;
     }
   

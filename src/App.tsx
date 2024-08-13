@@ -9,12 +9,17 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import AdminPage from './pages/AdminPage/AdminPage';
 import UserPage from './pages/UserPage/UserPage';
-import CoursesPage from './pages/CoursesPage/CoursesPage.js';
-import OneCoursePage from './pages/OneCoursePage/OneCoursePage.js';
-import AboutMePage from './pages/AboutMePage/AboutMePage.js'
-import Success from './stripe/success.js'
-import Canseled from './stripe/cansel.js'
-// import ReservationPage from './pages/ReservationPage/ReservationPage.js';
+import CoursesPage from './pages/CoursesPage/CoursesPage';
+import OneCoursePage from './pages/OneCoursePage/OneCoursePage';
+import AboutMePage from './pages/AboutMePage/AboutMePage'
+import Success from './stripe/success'
+import Canseled from './stripe/cansel'
+import PanierPage from './pages/PanierPage/PanierPage'
+import PaiementPage from './pages/PaiementPage/PaiementPage';
+import PhotosPage from './pages/PhotosPage/PhotosPages';
+import AddCourseForm from './components/AddCourseForm/AddCourseForm'
+import DeleteCourse from './components/DeleteCours/DeleteCours'
+// import ReservationPage from './pages/ReservationPage/ReservationPage';
 
 function App() {
   const { user } = useUser();
@@ -25,15 +30,19 @@ function App() {
         <Route path="/" element={<TemplateLogIn />}>
           <Route index element={<HomePage />} />
           <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/admin" element={<AdminPage />} />
           <Route path="/profile" element={<UserPage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/:id" element={<OneCoursePage />} />
           <Route path="/log-in" element={<LoginPage />} />
           <Route path="/propos" element={<AboutMePage />} />
           <Route path="/success" element={<Success />} />
-          <Route path="/canseled" element={<Canseled />} />
           {/* <Route path="/reservation" element={<ReservationPage />} /> */}
+          <Route path="/panier" element={<PanierPage />} />
+          <Route path="/paiement" element={<PaiementPage />} />
+          <Route path="/photos" element={<PhotosPage />} />
+          {user.isAdmin && <Route path="/admin" element={<AdminPage />} />}
+          <Route path="/add-course" element={<AddCourseForm />} />
+          <Route path="/delete-course" element={<DeleteCourse />} />
         </Route>
       ) : (
         <Route path="/" element={<Template />}>
@@ -44,6 +53,7 @@ function App() {
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/:id" element={<OneCoursePage />} />
           <Route path="/propos" element={<AboutMePage />} />
+          <Route path="/photos" element={<PhotosPage />} />
         </Route>
       )}
     </Routes>
