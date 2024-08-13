@@ -32,6 +32,7 @@ const Courses = () => {
               category={card.category}
               picture={card.picture}
               price={card.price}
+              showMore={true}
             />
           </li>
         ))}

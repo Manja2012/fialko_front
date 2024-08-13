@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import PhotoAdmin from '../../images/profil-2.jpg'
 import style from './AboutMePage.module.scss'
 const AboutMePage = () => {
@@ -20,7 +19,6 @@ const AboutMePage = () => {
                 laoreet praesent. Mauris non justo non blandit ultrices pretium
                 quam.
               </p>
-              <Link className={style.card__link}>A propos de moi</Link>
             </div>
             <div className={style.card__image_div}>
               <img

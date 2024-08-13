@@ -117,7 +117,12 @@
       }
     }
   }
-  
+  .title{
+    margin-top: 12px;
+    font-size: 26px;
+    line-height: 28px;
+    color: var(--accent-color);
+  }
   .flex {
     @media screen and (min-width: 768px) {
       display: flex;

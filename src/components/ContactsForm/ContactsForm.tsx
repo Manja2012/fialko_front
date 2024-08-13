@@ -1,5 +1,4 @@
 import { StrictMode, useState } from "react";
-import Dog_contacts from "../../images/dog_contacts.jpg";
 import { sendMessage } from "../../api/api-client.js";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -45,6 +44,7 @@ const ContactsForm = () => {
     <StrictMode>
       <section className={style.flex}>
         <div className={style.form} id="contacts">
+          <h1 className={style.title}>Contactez-nous</h1>
           <form onSubmit={handleSubmit}>
             <label className={style.form__label} htmlFor="name">
               Nom complet*
